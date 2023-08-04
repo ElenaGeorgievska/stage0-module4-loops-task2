@@ -4,20 +4,26 @@ public class FactorialNumbers {
     public void printFactorialRow(int printToInclusive) {
 
         int fact = 1;
-        int i = 1;
-        while( i <= printToInclusive ){
+        int i = 0;
+        while (i <= printToInclusive) {
+
             fact = fact * i;
+
+            if (fact == 0) {
+                fact = 1;
+            }
+
             System.out.println(fact);  //+" " + "+"
             i++; //increment i by 1
         }
 
-        if(printToInclusive == 0){
+        if (printToInclusive == 0) {
             fact = 1;
             System.out.println(fact);
         }
     }
 
-    public static void main(String[]args){
+    public static void main(String[] args) {
         FactorialNumbers fb = new FactorialNumbers();
         fb.printFactorialRow(7);
     }
