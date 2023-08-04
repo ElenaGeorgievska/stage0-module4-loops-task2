@@ -10,7 +10,7 @@ public class Multiplication {
             int result = i * multiplyByAndToInclusive;
 
             if (multiplyByAndToInclusive == 0) {
-                System.out.println("");
+                System.out.println();
             }
 
             if (multiplyByAndToInclusive < 0) {

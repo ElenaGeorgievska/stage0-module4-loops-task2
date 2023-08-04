@@ -17,10 +17,6 @@ public class FactorialNumbers {
             i++; //increment i by 1
         }
 
-        if (printToInclusive == 0) {
-            fact = 1;
-            System.out.println(fact);
-        }
     }
 
     public static void main(String[] args) {
